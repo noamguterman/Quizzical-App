@@ -1,0 +1,118 @@
+* {
+    box-sizing: border-box;
+    font-family: Inter, sans-serif;
+}
+
+body {
+    margin: 0;
+    padding: 50px;
+    color: #293264;
+}
+
+.welcomeContainer {
+    margin-top: 120px;
+    text-align: center;
+}
+
+.welcome--title {
+    font-size: 31px;
+    font-weight: bold;
+    font-family: Karla, sans-serif;
+    margin: 0;
+}
+
+.welcome--text {
+    font-size: 16px;
+    margin-top: 15px;
+}
+
+.welcome--button {
+    font-size: 16px;
+    font-weight: 500;
+    font-family: Inter, sans-serif;
+    color: #F5F7FB;
+    background-color: #4D5B9E;
+    border: none;
+    border-radius: 15px;
+    padding: 15px 40px;
+    margin-top: 20px;
+    cursor: pointer;
+}
+
+hr {
+    color: red;
+    background-color: red;
+    border: 1px solid #DBDEF0;
+}
+
+.question {
+    margin-top: 20px;
+    font-size: 16px;
+    font-weight: bold;
+    font-family: Karla, sans-serif;
+}
+
+.answersContainer {
+    display: flex;
+    flex-direction: row;
+    gap: 17px;
+    margin-bottom: 15px;
+}
+
+.answer {
+    cursor: pointer;
+    border: 1px solid #4D5B9E;
+    border-radius: 15px;
+    padding: 5px 15px;
+    font-size: 10px;
+    font-weight: 500;
+}
+
+.answer.disabled {
+    cursor: default;
+}
+
+.answer.selected {
+    background-color: #D6DBF5;
+    border: 1px solid transparent;
+}
+
+.answer.unselected:not(.correct-answer) {
+    opacity: 50%;
+}
+
+.answer.correct-answer {
+    background-color: #94D7A2;
+    border: 1px solid transparent;
+}
+
+.answer.wrong-answer {
+    background-color: #F8BCBC;
+    border: 1px solid transparent;
+}
+
+.checkAnswersContainer {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.checkAnswersBtn, .playAgainBtn {
+    font-size: 10px;
+    font-weight: 600;
+    font-family: Inter, sans-serif;
+    color: #F5F7FB;
+    background-color: #4D5B9E;
+    border: none;
+    border-radius: 15px;
+    padding: 12px 35px;
+    cursor: pointer;
+}
+
+.resultsContainer {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
